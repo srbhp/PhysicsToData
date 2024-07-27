@@ -1,0 +1,25 @@
+pipeline {
+		agent { 
+			# dockerfile true
+			docker {
+				image "ubuntu:latest"
+			}
+		}
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building from ..'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+            }
+        }
+    }
+}

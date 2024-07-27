@@ -28,7 +28,16 @@
     - Now you can `Build Now` from the `Dashboard`
 
 
- - [ ] Using Docker with Jenkins Pipelines
+ - [X] Using Docker with Jenkins Pipelines
+        - Build with a docker image
+            ```
+            agent { 
+                # dockerfile true
+                docker {
+                    image "ubuntu:latest"
+                }
+            }
+            ```
  - [ ] Docker Images
  - [ ] Launching a Multi-Service Application with Docker Compose
  - [ ] Automated Code Analysis
