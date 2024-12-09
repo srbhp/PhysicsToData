@@ -29,7 +29,9 @@
 
 
  - [X] Using Docker with Jenkins Pipelines
+
         - Build with a docker image
+
             ```
             agent { 
                 # dockerfile true
